@@ -1,0 +1,533 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+    text-decoration: none; 
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    
+}
+
+#page{
+  display: flex;
+  width: 1400px;
+  margin: 25px 350px;
+  align-items: flex-start;
+  position: relative;
+ 
+}
+#page .header{
+  display: flex;
+  justify-content: space-around;
+  width: 410px;
+  height: 50px;
+  background-color: rgb(230, 230, 230);
+}
+
+#page .header .pp{
+  border-radius: 100%;
+  width: 40px;
+  margin-right: 80px;
+  margin-top: 5px;
+}
+#page .header .header-ikon{
+  display: flex;
+}
+#page .header .header-ikon div{
+  margin-left: 20px;
+  margin-top: 15px;
+  color: #666;
+}
+#page .message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:90%;
+  height: 825px;
+  background-color: white;
+}
+#page .message img{
+  border-radius: 100%;
+}
+#page .message img{
+  margin: 150px 300px 0 300px;
+}
+#page .message span h2, p, hr{
+ 
+}
+#page .message span h2{
+  font-size: 30px;
+}
+#page #message{
+  display: flex;
+  flex-direction: column;
+}
+#page #message .alt{
+  width:90%;
+  height: 5px;
+  background-color: rgb(54, 199, 54);
+}
+.arka{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+position: absolute;
+
+}
+.arka .ilk{
+  height:130px;
+  width: 100%;
+  background-color: rgb(4, 145, 145);
+  margin-top: -25px;
+  margin-left: -10px;
+  
+}
+.arka .ikinci{
+  height: 850px;
+  width: 100%;
+  background-color: rgb(207, 211, 207);
+  margin-left: -10px;
+}
+#page .bildirim{
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  height: 800px;
+  background-color: white;  
+}
+#page .mesaj{
+  display: flex;
+  width: auto;
+  justify-content: flex-end;
+ 
+  
+}
+#page .mesaj .scrollbar
+{
+	margin-left: 0;
+	float: left;
+	height: 780px;
+	width: 450px;
+	background: white;
+	overflow-y: scroll;
+	margin-bottom: 0;
+}
+
+#page .mesaj .force-overflow
+{
+	min-height: 450px;
+}
+#page .mesaj .page-message{
+  display: flex;
+  flex-direction: column;  
+}
+#page .mesaj .page-message hr{
+  color: #666;
+}
+#page .mesaj .page-message img{
+  width: 50px;
+  border-radius: 100%;
+}
+#page .mesaj .page-message .page-bildirim{
+  display: flex;
+  flex-direction: column;
+}
+#page .mesaj .page-message .page-bildirim .duzen{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+  margin-bottom: -10px;
+  width: 315px;
+  margin-left: 10px;
+  
+}
+#page .mesaj .page-message .page-mesaj{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  top: 0;
+  left: 419px;
+  position: absolute;
+  width:61.5%;
+  height: 830px;
+  background-color: rgb(224, 213, 213);
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel #header{
+  display: flex;
+  position:absolute;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  width: 100%;
+  justify-content: space-between;
+}
+.panel #header .header-d{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+.panel #header .header-d div{
+  margin-left: 25px;
+}
+.panel #footer{
+  top: 769px;
+  display: flex;
+  position:absolute;
+  background-color: rgb(230, 230, 230);
+  color: black;
+  width: 100%;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.panel #footer input{
+  width: 700px;
+  height: 40px;
+  border-color:rgb(230, 230, 230);
+  border: 0;
+}
+.panel #footer div{
+  margin-left: 15px;
+}
+.accordion2 {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion2:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel2 {  
+  position: absolute;
+  bottom:50px;
+  width:500px;
+  height: 380px;
+  left: -10px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel2 svg{
+  border-radius: 100%;
+  position: relative;
+}
+.panel2 .oda >ul>li>ul{
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: #EEE;
+  display: none;
+  border-radius: 60%;
+}
+.panel2 .oda a {
+  position: relative;
+  display: block;    
+  cursor: pointer; 
+}
+
+.panel2 .oda>ul> li:hover > ul{
+  display: block;
+  position: absolute;
+  left: 120px; 
+  top: 25px;
+}
+.panel2 .kisi >ul>li>ul{
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: #EEE;
+  display: none;
+  border-radius: 60%;
+}
+.panel2 .kisi a {
+  position: relative;
+  display: block;    
+  cursor: pointer; 
+}
+
+.panel2 .kisi>ul> li:hover > ul{
+  display: block;
+  position: absolute;
+  left: 120px; 
+  top: 110px;
+}
+.panel2 .belge >ul>li>ul{
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: #EEE;
+  display: none;
+  border-radius: 60%;
+}
+.panel2 .belge a {
+  position: relative;
+  display: block;    
+  cursor: pointer; 
+}
+
+.panel2 .belge>ul> li:hover > ul{
+  display: block;
+  position: absolute;
+  left: 120px; 
+  top: 180px;
+}
+.panel2 .kamera >ul>li>ul{
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: #EEE;
+  display: none;
+}
+.panel2 .kamera a {
+  position: relative;
+  display: block;    
+  cursor: pointer; 
+}
+
+.panel2 .kamera>ul> li:hover > ul{
+  display: block;
+  position: absolute;
+  left: 120px; 
+  top: 250px;
+  border-radius: 70%;
+}
+.panel2 .foto >ul>li>ul{
+  width: 200px;
+  height: 30px;
+  background-color: black;
+  color: #EEE;
+  display: none;
+  border-radius: 90%;
+}
+.panel2 .foto a {
+  position: relative;
+  display: block;    
+  cursor: pointer; 
+}
+
+.panel2 .foto>ul> li:hover > ul{
+  display: block;
+  position: absolute;
+  left: 120px; 
+  top: 320px;
+}
+
+.accordion3 {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion3:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel3 {  
+  position: absolute;
+  top: 17px;
+  width:150px;
+  left: 230px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 10px;
+}
+.panel3 svg{
+  border-radius: 100%;
+  position: relative;
+}
+.panel3 ul{
+  display: block;
+  background-color: white;
+  position: relative;
+}
+.panel3 ul li{
+  padding: 10px ;
+  
+}
+.panel3 ul li a{
+  display: block;
+  color: black;
+}
+.panel3 ul li:hover{
+  background-color: rgb(197, 191, 191);
+}
+
+
+
+
+
+
+
+.scrollbar
+{
+	margin-left: 0;
+	float: left;
+	height: 725px;
+	width: 300px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 0;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	
+	width: auto;
+  
+}
+
+
+/*
+ *  STYLE 2
+ */
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 2px white;
+
+	background-color: white;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+
+	background-color: #cfcccc;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,600);
+body {
+  margin: 0;
+  background-color: #f8ffb4;
+}
+
+
+#chat .screen {
+ 
+  background-color: rgb(255, 255, 255);
+
+  width: 862px;
+  height: 750px;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+}
+#chat .screen img{
+  opacity: 10%;
+}
+
+
+#chat .chat {
+  width: 100%;
+  height: calc(100% + -97px);
+  overflow: auto;
+  padding: 10px;
+}
+#chat .message {
+  position: relative;
+  border-radius: 7px;
+  background-color: #aede2e;
+  padding: 5px;
+  font: 15px "Roboto", Segoe UI, sans-serif;
+  width: calc(100% + -400px);
+  height: 90px;
+  margin-bottom: 20px;
+}
+#chat .icon-back {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0000;
+  padding: 7px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 200ms ease-in-out;
+  float: left;
+  margin-right: 7px;
+}
+#chat .icon-back:hover {
+  background-color: #ffffff47;
+}
+#chat  .icon-back:active {
+  background-color: #ffffff94;
+}
+#chat .message:nth-child(odd) {
+  float: left;
+  background-color: #e0e0e0;
+}
+#chat .message:nth-child(even) {
+  float: right;
+}
+#chat .message span {
+  color: #000000cc;
+  font-size: 11.5px;
+  font-weight: 600;
+  float: right;
+  margin-top: 5px;
+}
+#chat .chat::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+#chat .chat::-webkit-scrollbar-thumb {
+  background-color: #00000070;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+@media screen (){
+  
+}
